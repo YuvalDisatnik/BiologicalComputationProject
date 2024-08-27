@@ -14,15 +14,21 @@ First clone this repository to your machine in your desired folder
 ```bash
 git init
 git clone https://github.com/YuvalDisatnik/BiologicalComputationProject.git
+cd BiologicalComputationProject
 ```
 
 You will need to create a virtual enviroment and download the needed dependecies.\
 In the same folder of your project, type:
 ```bash
 python -m venv myvenv
+
+# For linux / mac machines:
 source myvenv/bin/activate
 
-pip install requirements.txt
+# For windows:
+myvenv\Scripts\activate
+
+pip install -r requirements.txt
 ```
 And finally run the program
 ```python
