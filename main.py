@@ -24,8 +24,8 @@ def isRegularConditionMonotonic(regular_condition):
     return True
 
 def saveAllMonotonic(monotonic_list):
-    # Open biocomp_data_all for reading
-    with open('biocomp_data_all.csv', mode='r', newline='') as source_file:
+    # Open all_posible_regulation_conditions for reading
+    with open('all_posible_regulation_conditions.csv', mode='r', newline='') as source_file:
         reader = csv.reader(source_file)
     
         # Open the destination CSV file for writing
@@ -88,7 +88,7 @@ def main():
     # right digit is the number of active inhibitors
 
     # Extract the data from the csv file (table d from the project)
-    data = pandas.read_csv('biocomp_data_all.csv')
+    data = pandas.read_csv('all_posible_regulation_conditions.csv')
 
     # Declare a list to hold all monotonic regular conditions
     monotonic_regular_conditions = []
